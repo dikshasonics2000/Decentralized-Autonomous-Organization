@@ -1,0 +1,96 @@
+FakeNFTMarketplace deployed to:  0x2A14227a0f4C7f15714Ae1ca8A73b34620c50CF7
+CryptoDevsDAO deployed to:  0x0d095f4010D788c539C473b950f03C36990c360B
+
+FakeMarketPlace.sol
+
+price = 0.01;// it will be constant
+purchase(){
+if available and price is equal to required price>>> do transaction else error message
+}
+to getAddress we need mapping nd not functions so tokens name mapping is made to map any address to the particular tokenId nft that they created
+
+getPrice() {
+to return the price of nft to be purchased. We made a fake nftmarketplace just to havea constant nft price
+}
+
+available(){
+to see in mapping if the tokenId nft is not purchased by anyone else already so that it can return true or false for purchase to continue
+}
+
+=====================================================
+CryptoDevsDAO.sol
+
+//interfaces from cryptodevsNFT contract and fakenftmarketplace contract
+IfakeNFTmarketplace
+IccryptoDevsNFT
+contract cryptodevdao is ownable {
+
+
+
+
+
+
+if passed then carry on the purchase of NFT from the fake nft marketPlaceafter the deadline
+struct {
+what all things the proposal should have- 
+tokenId 
+deadline finished or not
+team A no of votes
+team B no of votes
+purchase done or executed -means whether the deadline hqas completed or not
+mapping of bool to see if the vote is already casted for the particular token id
+}
+
+mapping(proposalId to proposal)
+count of Proposals
+
+if he is a member with any nft- modifier created
+create proposal(){
+propsalID store with numProposal ..... store proposal
+purchase givenTokenId  if available for purchase
+insert nftokenId in struct 
+insert deadline timestamp in struct
+numProposal++
+return numproposal
+mapp it
+}
+
+modifier to validate that propsal is active and you can vote now 
+
+count votesNay Yay- enum created for possible options for vote
+
+to voteOnproposal() if they havent done yet before the deadline- {
+collect total balance
+and check with all owned tokenIDS if it is used or not using for loop
+then increment numVotes times yay or nay
+}
+
+if passed then execute() the purchase of NFT from the fake nft marketPlaceafter the deadline
+we create modifier inactive proposal
+execute() {
+if y > n 
+then getPrice and see if it is enough if yes then call the purchase function to process it.
+}
+
+withdraw() to withdraw the eth from the contract
+
+=======================================================
+
+1. useeffect()- called first time we open up the website
+2.walletConnected ()- to check if wallet connected we use useState the walletConnected function changes the value of setWalletConnected
+we connect using web3modal so lets import aqnd create its instance web3modalref that lets the wallet connected by the time we are using the website
+3.getproviderorsigner()
+
+getNumber of proposals
+voteonproposal
+getdaotreasury
+usernftbalance
+createproposal
+fetchproposalid
+fetchallproposal
+executeproposal
+getContractdaoindtance
+getcryptonftcontractinstance
+
+
+
